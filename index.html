@@ -3789,21 +3789,14 @@
         function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
         function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 
-        // Hide navbar on scroll down, show on scroll up
-        let lastScrollY = 0;
+        // Hide navbar when scrolling, show only at top
         const navbar = document.getElementById('main-navbar');
         window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-            if (currentScrollY <= 10) {
-                navbar.style.transform = 'translateY(0)';
-            } else if (currentScrollY > lastScrollY) {
-                // Scrolling down — hide
+            if (window.scrollY > 10) {
                 navbar.style.transform = 'translateY(-100%)';
             } else {
-                // Scrolling up — show
                 navbar.style.transform = 'translateY(0)';
             }
-            lastScrollY = currentScrollY;
         }, { passive: true });
 
         // Initialize Lucide Icons
