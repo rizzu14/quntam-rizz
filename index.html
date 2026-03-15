@@ -418,7 +418,7 @@
             letter-spacing: 1.5px;
             text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
             display: flex;
             align-items: center;
             gap: 0.6rem;
@@ -426,9 +426,8 @@
             padding: 0.4rem 0.8rem;
             border-radius: 8px;
             position: relative;
-            transform-style: preserve-3d;
-            perspective: 400px;
             border: 1px solid transparent;
+            flex-shrink: 0;
         }
 
         .nav-link:hover {
@@ -471,9 +470,11 @@
             padding: 0.4rem 1rem;
             border-left: 1px solid rgba(255,255,255,0.1);
             border-radius: 10px;
-            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
             position: relative;
             cursor: pointer;
+            flex-shrink: 0;
+            margin-left: auto;
         }
 
         .user-nav-profile:hover {
