@@ -378,6 +378,8 @@
                 0 0 10px rgba(0, 242, 255, 0.05);
             position: relative;
             overflow: hidden;
+            white-space: nowrap;
+            flex-wrap: nowrap;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -2097,7 +2099,7 @@
     <div class="ambient-light"></div>
 
     <div class="top-nav-wrapper" style="position:fixed;top:32px;left:0;width:100%;z-index:5000;">
-        <nav class="top-nav" style="width:100%;border-radius:0;border:none;border-bottom:1px solid rgba(0,242,255,0.2);padding:0.55rem 2rem;">
+        <nav class="top-nav" style="width:100%;border-radius:0;border:none;border-bottom:1px solid rgba(0,242,255,0.2);padding:0.55rem 2rem;overflow:hidden;">
             <div class="top-nav-brand">⚛ QUANTUMSHIELD</div>
             <div class="nav-link" onclick="showHome()">
                 <i data-lucide="home" style="width: 14px; height: 14px;"></i>
