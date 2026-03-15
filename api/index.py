@@ -2,6 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import time
 import re
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(__file__))
 from _scanner_engine import CryptoScanner
 
 app = Flask(__name__)
