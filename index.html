@@ -1935,8 +1935,18 @@
             border-radius: 50%;
         }
 
-        /* Hide brand on desktop */
-        .top-nav-brand { display: none; }
+        /* Brand always visible */
+        .top-nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
 
         @media (max-width: 768px) {
             .top-nav .nav-link,
